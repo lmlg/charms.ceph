@@ -1128,6 +1128,7 @@ class CephTestCase(unittest.TestCase):
             name='someid',
             caps=collections.OrderedDict([
                 ('mon', ['allow profile rbd-mirror-peer',
+                         'allow profile rbd-mirror',
                          'allow command "service dump"',
                          'allow command "service status"']),
                 ('osd', ['profile rbd']),
